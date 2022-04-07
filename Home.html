@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>carrywood.in</title>
+</head>
+<body>
+  <div id="sidebar" onclick="togglemenu()">
+      <div class="toggle-btn">
+          <span style="cursor: pointer;"></span>
+          <span style="cursor: pointer;"></span>
+          <span style="cursor: pointer;"></span>
+      </div>
+      <ul>
+          <li id="Home">Home</li>
+          <li id="Products">Products</li>
+          <li id="Contact-Us">Contact Us</li>
+          <li id="Profile">Profile</li>
+      </ul>
+  </div>
+    <div class="banner">
+        <center><img src="/img/company banner.png" width="300" height="100"></center>
+    </div>
+    <form autocomplete="off" method="POST" name="google-sheet">
+    <center id="center" style="background-color: darkslategray; padding-bottom: 150px;">
+        <h1 style="color: white;" id="SIgnUP">Sign Up</h1>
+       <label for="Name">
+           <br>
+           <input autocomplete="off" name="Name" required type="text" id="input" placeholder="Enter Your Name">
+           </br>
+           </label>
+           
+           <label for="Email">
+           <br>
+           <input autocomplete="off" name="Email" required type="text" id="inputEmail" placeholder="Enter Your Email">
+           </br>
+           </label>
+       
+            <label for="Number">
+            <br>
+            <input autocomplete="off" name="Number" style="margin-bottom: 30px;" required type="text" id="inputNumber" placeholder="Enter Your Number">
+            </br>     
+            </label>
+           
+            <label for="Address">
+            <br>
+            <input autocomplete="off" name="Address" style="margin-bottom: 30px;" required type="text" id="inputNumber" placeholder="Enter Your Address">
+            </br>     
+            </label>
+
+
+            <br>
+           <button id="UserInterFace" onclick="save()">submit</button>
+           </br>
+    </center>
+</form>
+<div class="pr">
+  <center><h1>beautiful crane</h1></center>
+<center><img onclick="changeIT()" src="./img/product1.jpg" width="110" height="110"></center>
+<center><h3 onclick="changeIT()">beautiful crane with pair of 2 / CARRYWOOD</h3></center>
+<center><h2>welcome to my shop</h2></center>
+<center><h1>CARRYWOOD</h1></center>
+<center><p style="width: 200px;">this product is so beautiful and ya this product will come with pair of 2
+  so it's gonna be best purchase ever from us and also this is best for decoration like for home decoration
+  , office decor, resturent decor that's it
+</p></center>
+<center><h2>CARRYWOOD</h2></center>
+</div>
+<script>
+    function save() {
+        let BG = document.getElementById("center").style.display = "none";
+        var Product1 = document.getElementById("Image").style.display = "";
+        let Heading = document.getElementById("SIgnUP").style.display = "none";
+        let Email = document.getElementById("inputEmail").style.display = "none";
+        let Num = document.getElementById("inputNumber").style.display = "none";
+        let Power = document.getElementById("input").style.display = "none";
+       let Service = document.getElementById("UserInterFace").style.display = "none";
+        var Item = document.getElementById("input").value;
+       localStorage.setItem("storedItem", Item);
+       document.getElementById("Profile").innerHTML = Item;
+}
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCx9oGpsCY7myA04JFHti78faFqXW9coOHeSBRGf7seoHkY49GpQGmKkbiCtLCivLs/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+      function togglemenu() {
+        document.getElementById('sidebar').classList.toggle('active');
+      }
+  </script>
+<script>
+  function changeIT() {
+    window.location.replace("product1.html");
+  }
+</script>
+</body>
+</html>

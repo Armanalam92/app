@@ -1,0 +1,291 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+#sidebar{
+    position: fixed;
+    width: 60%;
+    height: 100%;
+    left: -60%;
+    background-color: dimgray;
+    -webkit-transition-delay: 100ms;
+}
+
+#sidebar li{
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 50px 60px;
+}
+
+.banner{
+    color: black;
+    background: #01721a;
+    box-shadow: 0 0 10px #1cb924, 0 0 40px #1cb924, 0 0 80px #1cb924;
+}
+
+.nabar a:hover{
+    color: black;
+    background: #adbd1e;
+    box-shadow: 0 0 10px #1cb924, 0 0 40px #1cb924, 0 0 80px #1cb924;
+}
+
+#Home:hover
+{
+  background: transparent;
+}
+
+#Products:hover
+{
+  background-color: transparent;
+}
+
+#Contact-Us:hover
+{
+  background-color: transparent;
+}
+
+#Profile:hover
+{
+  background-color: transparent;
+}
+
+#inputEmail{
+    font-size: bold;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background: #fff;
+    border: 5px solid #01721a;
+    box-shadow: 0 0 10px #1cb924, 0 0 40px #1cb924, 0 0 80px #1cb924;    
+}
+
+#inputNumber{
+    font-size: bold;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background: #fff;
+    border: 5px solid #01721a;
+    box-shadow: 0 0 10px #1cb924, 0 0 40px #1cb924, 0 0 80px #1cb924;    
+}
+
+#input{
+    font-size: bold;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background: #fff;
+    border: 5px solid #01721a;
+    box-shadow: 0 0 20px #1cb924, 0 0 40px #1cb924, 0 0 80px #1cb924;    
+}
+
+#UserInterFace{
+    font-size: bold;
+    border-radius: 60px;
+    width: 200px;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0px solid white;
+    color: black;
+    background: #25dd14;
+    box-shadow: 0 0 10px #1cb924, 0 0 40px #1cb924, 0 0 80px #1cb924;    
+}
+
+
+.Pro
+{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+#sidebar li{
+      
+    font-family: futura;
+    font-style: normal;
+    
+    
+    color:#313131;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-animation:colorchange 20s infinite alternate;
+    
+  }
+
+
+
+
+  @-webkit-keyframes colorchange {
+    0% {
+      
+   color: red;
+    }
+    
+    10% {
+      
+      color: orange;
+    }
+    
+    20% {
+      
+      color: #19ffd1;
+    }
+    
+    30% {
+      
+      color: #db9b70;
+    }
+    
+    40% {
+      
+      color: rgb(91, 91, 233);
+    }
+    
+    50% {
+      
+      color: #ffffff;
+    }
+    
+    60% {
+      
+      color: orangered;
+    }
+    
+    70% {
+      
+      color: #2980b9;
+    }
+    80% {
+   
+      color: #f1c40f;
+    }
+    
+    90% {
+   
+      color: #2980b9;
+    }
+    
+    100% {
+      
+      color: pink;
+    }
+  }
+ 
+  .toggle-btn span{
+      
+    font-family: futura;
+    font-style: normal;
+    
+    
+    color:#313131;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-animation:colorchange 20s infinite alternate;
+    
+  }
+
+
+
+
+  @-webkit-keyframes colorchange {
+    0% {
+      
+   color: red;
+    }
+    
+    10% {
+      
+      color: orange;
+    }
+    
+    20% {
+      
+      color: #19ffd1;
+    }
+    
+    30% {
+      
+      color: #db9b70;
+    }
+    
+    40% {
+      
+      color: rgb(91, 91, 233);
+    }
+    
+    50% {
+      
+      color: #ffffff;
+    }
+    
+    60% {
+      
+      color: orangered;
+    }
+    
+    70% {
+      
+      color: #2980b9;
+    }
+    80% {
+   
+      color: #f1c40f;
+    }
+    
+    90% {
+   
+      color: #2980b9;
+    }
+    
+    100% {
+      
+      color: pink;
+    }
+  }
+
+  .toggle-btn{
+      position: absolute;
+      left: 105%;
+      top: 15px;
+  }
+
+  .toggle-btn span{
+      display: block;
+      background-color: black;
+      width: 30px;
+      height: 5px;
+      margin: 5px;
+  }
+
+  #sidebar.active{
+      left: 0;
+  }
+
+  
+ .card1
+ {
+   padding-top: 100px;
+   background-color: #313131;
+   padding-left: 100px;
+   width: 100px;
+   justify-content: center;
+ }
+
+ .pr
+ {
+   border-radius: 20px;
+   background-color: #5aff19;
+ }
+
+ .pr h1{
+   font-family: 'Times New Roman', Times, serif;
+ }
+
+ .pr h3
+ {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
